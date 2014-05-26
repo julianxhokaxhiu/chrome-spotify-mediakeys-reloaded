@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+    "name": "Spotify Mediakeys Reloaded",
+    "version": "0.1",
+    "description": "Enable the use of MediaKeys for Spotify",
+    "permissions": [
+        "*://play.spotify.com/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "commands": {
+        "PLAY-PAUSE-MK": {
+            "suggested_key": { "default": "MediaPlayPause" },
+            "description": "Play/Pause Key",
+            "global": true
+        },
+        "PREV-MK": {
+            "suggested_key": { "default": "MediaPrevTrack" },
+            "description": "Prev Key",
+            "global": true
+        },
+        "NEXT-MK": {
+            "suggested_key": { "default": "MediaNextTrack" },
+            "description": "Next Key",
+            "global": true
+        }
+    },
+    "icons": {
+        "16": "img/icon_16.png",
+        "128": "img/icon_128.png"
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://play.spotify.com/*"
+        ],
+        "js": [
+            "js/jquery-2.1.1.min.js",
+            "js/app.js"
+        ],
+        "run_at": "document_idle"
+    }]
+}

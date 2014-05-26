@@ -1,0 +1,10 @@
+AUTHOR: Julian Xhokaxhiu
+VERSION: 0.1
+DESCRIPTION: Enable the mediakeys for Spotify
+
+HOW IT WORKS:
+As a native desktop application, you just press play/pause button,
+prev or next and it will trigger the buttons for the web app :)
+Now also working in background (minimize Chrome and forget about it).
+
+Enjoy!

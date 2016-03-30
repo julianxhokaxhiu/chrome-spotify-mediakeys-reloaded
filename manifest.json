@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Spotify Mediakeys Reloaded",
-    "version": "0.1",
+    "version": "0.1.1",
     "description": "Enable the use of MediaKeys for Spotify",
     "permissions": [
         "*://play.spotify.com/*"

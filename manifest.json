@@ -1,10 +1,11 @@
 {
     "manifest_version": 2,
     "name": "Spotify Mediakeys Reloaded",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Enable the use of MediaKeys for Spotify",
     "permissions": [
-        "*://play.spotify.com/*"
+        "*://open.spotify.com/*",
+        "tabs"
     ],
     "background": {
         "scripts": [
@@ -35,10 +36,9 @@
     },
     "content_scripts": [{
         "matches": [
-            "*://play.spotify.com/*"
+            "*://open.spotify.com/*"
         ],
         "js": [
-            "js/jquery-2.1.1.min.js",
             "js/app.js"
         ],
         "run_at": "document_idle"
